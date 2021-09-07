@@ -1,0 +1,43 @@
+.pantalla{
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 480px){
+        .pantalla{
+            width: 25%;
+            background-color: goldenrod;
+        }
+        .pantalla>h1{
+            width: 25%;
+            background-color: goldenrod;
+        }
+        .pantalla>p{
+            background-color: goldenrod;
+        }
+}
+@media only screen and (min-width: 481px){
+        .pantalla{
+            width: 50%;
+            background-color: dodgerblue;
+        }
+        .pantalla>h1{
+            width: 50%;
+            background-color: dodgerblue;
+        }
+        .pantalla>p{
+            background-color: dodgerblue;
+        }
+}
+@media only screen and (min-width: 1024px){
+        .pantalla{
+            width: 100%;
+            background-color: firebrick;
+        }
+        .pantalla>h1{
+            width: 100%;
+            background-color: firebrick;
+        }
+        .pantalla>p{
+            background-color: firebrick;
+        }
+}

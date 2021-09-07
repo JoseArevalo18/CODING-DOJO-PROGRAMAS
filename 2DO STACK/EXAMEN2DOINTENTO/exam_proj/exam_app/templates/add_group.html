@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Autor" content="JOSE AREVALO">
+    <meta name= "Tema" content="EXAMEN">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>ADD A NEW GROUP</title>
+</head>
+<body>
+    <li class="nav-item">
+        <a class="nav-link active" href="/user/logout"><i class="fas fa-sign-out-alt"></i>LOG OUT</a>
+        <a class="nav-link active" href="/user/dashboard"><i class="fas fa-sign-out-alt"></i>HOME</a>
+    </li>
+    <div class="container-sm">
+    <h1>Add a new Group title</h1>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>
+                {{message}}
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- CREATE GROUP FORM -->
+            <div class="list-group-item list-group-item-secondary">
+            <form action="/group/create" method="post">
+                {% csrf_token %}
+                <label for="title">Group title: </label>
+                <input type="text" name="title">
+                <br>
+                <br>
+                <label for="member">Member: </label>
+                <select name="author_dropdown">
+                    <option value="-1"> Please choose an member </option>
+                    {% for member in members %}
+                    <option value="{{author.id}}">{{member.name}}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <br>
+                <label for="member_name">Or add a new members</label>
+                <input type="text" name="member_name">
+                <br>
+                <br>
+                <label for="persons">Member:</label>
+                <input name="persons" cols="10" rows="1"></input>
+                <br>
+                <br>
+                <label for="content">Review: </label>
+                <textarea name="content" cols="20" rows="3"></textarea>
+                <br>
+                <br>
+                <button class="btn btn-outline-primary">Join Group</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

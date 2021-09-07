@@ -1,0 +1,12 @@
+1)WINDOS+R...CDM
+2)cd desktop
+3)mkdir test
+4) touch index.html
+   touch style.css
+   touch commands.txt
+5)cp index.html index_2.html
+6)cd..
+  mkdir destiny
+7)mv index_2.html../destiny
+8)cd test
+  rm style.css

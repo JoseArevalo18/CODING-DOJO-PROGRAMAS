@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline:1px solid red;
+}
+.container{
+    height: 975px;
+    width: 1200px;
+    padding: 20px;
+    margin: 0px auto;
+    background-color: rgba(215, 215, 223, 0.986);
+}
+.englobamiento{
+    height: 900px;
+    width: 1150px;
+    margin: 0px 0px 0px 33px;
+    background-color:rgba(215, 215, 223, 0.986)
+}
+.header>img{
+margin: 5px;
+}
+.header>h1{
+    display: inline;
+    margin: 0px 0px 0px 16px;
+    vertical-align: 19px;
+    color: rgba(110, 110, 114, 0.986)
+}
+.header>button{
+    width: 20px;
+    height: 20px;
+    margin-left: -177px;
+    vertical-align: 29px;
+    border-radius: 5px 0px 0px 5px;
+}
+.header>input{
+    vertical-align: 24px;
+    border-radius: 10px;
+    margin-left: 290px;
+}
+.informacion{
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    display: inline-block;
+}
+.informacion>a{
+    text-decoration: none;
+}
+.informacion>a>h2{
+    color: black;
+    margin-bottom: 10px;
+}
+.informacion>a>h3{
+    color: red;
+    font-size: 21px;    
+    margin-bottom: 10px;
+}
+.informacion>a>p{
+    color: rgb(22, 21, 21);
+    font-size: 17px;
+    margin-left: 38px;
+    margin-bottom: 10px;
+}
+.decoracion{
+    background-color: rgba(121, 139, 139, 0.041);
+    height: 20px;
+    margin-top: 53px;
+}
+.texto{
+    margin-top: 32px;
+    width: 185px;
+    margin-left: 95px;
+    color: gray;
+}
+.texto>p>a{
+    text-decoration: none;
+    
+}
+.informacion2{
+    height: 800px;
+    width: 800px;
+    display: inline-block;
+    vertical-align: -307px;
+    background-color: white;
+}
+.bloque1{
+    width: 800px;
+    height: 300px;
+}
+.descargas{
+    width: 380px;
+    margin: 10px;
+    margin-top: 10px;
+    display:inline-block;
+    vertical-align: 47px;
+}
+.marcas{
+    margin-top: 35px;
+    background-color:rgba(215, 215, 223, 0.986);
+}
+.marcas>img{
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.marcas>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.texto2{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.texto2>p>a{
+    text-decoration: none;
+}
+.bloque1>img{
+    display: inline-block;
+}
+.textomonitor{
+    width: 295px;
+    margin-left: 448px;
+    margin-top: -275px;
+}
+.textomonitor>h4{
+    color: white;
+}
+.textomonitor>h2{
+    color: white;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.textomonitor>p{
+    color: cyan;
+}
+.textomonitor>p>b{
+    color: white;
+}
+.textomonitor>button{
+    margin-top: 22px;
+    margin-left: 35px;
+    font-size: 20px;
+    background-color: darkcyan;
+    color: white;
+}
+.contenidobloque{
+    width: 800px;
+    height: 250px;
+}
+.cuadromaster{
+    background-color: rgba(215, 215, 223, 0.986);
+    border-radius: 25px;
+    margin-top: 30px;
+    height: 250px;
+    margin: 18px;
+}
+.cuadro1{
+    width: 360px;
+    margin: 10px;
+    display: inline-block;
+    margin-top: 35px;
+
+}
+.cuadro1>h2 {
+    color: red;
+}
+.cuadro1>p{
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.cuadro1>a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.cuadro2{
+    width: 360px;
+    margin: 10px;
+    display: inline-block;
+    margin-top: 35px;
+    vertical-align: 10px;
+
+}
+.cuadro2>h2 {
+    color: red;
+}
+.cuadro2>p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.cuadro2>a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.bloque2{
+    width: 800px;
+    height: 205px;
+}
+.bloque2>h2{
+    margin-top: 15px;
+    color: red;
+    margin-left: 15px;
+
+}
+.bloque2>p{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.bloque2>a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.bloque2>p>a{
+    color: blue;
+}
+.final{
+    margin-top: 25px;
+    border-top: double rgba(110, 110, 114, 0.986);
+}
+.final>img{
+    margin-left: 35px;
+    display: inline-block;
+}
+.final01{
+    display: inline-block;
+    width: 300px;
+    vertical-align: 8px;
+}
+.final01>p{
+    color: rgba(110, 110, 114, 0.986);
+}
+.final02{
+    vertical-align: 28px;
+    display: inline-block;
+    margin-left: 400px;
+}
+.final02>h4>b{
+    color: rgba(110, 110, 114, 0.986);
+}
+
+

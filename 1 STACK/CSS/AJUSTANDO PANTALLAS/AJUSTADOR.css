@@ -1,0 +1,19 @@
+.navbtn{
+    width: 200px;
+    height: 200px;
+}
+    @media only screen and (max-width: 480px){
+        .navbtn{
+            background-color: goldenrod;
+        }
+}
+@media only screen and (max-width: 481px){
+        .navbtn{
+            background-color: dodgerblue;
+        }
+}
+@media only screen and (max-width: 1024px){
+        .navbtn{
+            background-color: firebrick;
+        }
+}

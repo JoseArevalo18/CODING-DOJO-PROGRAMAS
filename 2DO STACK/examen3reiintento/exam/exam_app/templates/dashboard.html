@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Autor" content="JOSE AREVALO">
+    <meta name= "Tema" content="EXAMEN">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1ad2a7dd75.js" crossorigin="anonymous"></script>
+    <title>ALL WISHES</title>
+</head>
+<body>
+    
+    <a class="nav-link active" href="/user/logout"><i class="fas fa-sign-out-alt"></i>LOG OUT</a>
+    <a class="nav-link active" href="/wish/create"><i class="fas fa-sign-out-alt"></i>MAKE A WISH!</a>
+    <h1>HELLO {{logged_user.name}} !!</h1>
+    <div class="d-flex justify-content-center">
+        <table class="table">
+            <h2>Your wish list:</h2>
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Release Date</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for shows in all_shows %}
+                <tr>
+                    <td>{{ Item.title }}</td>
+                    <td>{{ Item.release_date }}</td>
+                    <td><a href="/wish/{{Item.id}}"><i class="fas fa-eye"></i></a>   <a href="/wish/{{Item.id}}/edit"><i class="fas fa-edit"></i></a>   <a href="/wish/{{ Item.id }}/delete"><i class="fas fa-trash-alt"></i></a>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    
+    <div class="d-flex justify-content-center">
+        <table class="table">
+            <h2>Granted Wishes:</h2>
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Wisher</th>
+                    <th scope="col">Date Added</th>
+                    <th scope="col">Date Granted</th>
+                    <th scope="col">likes</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for shows in all_shows %}
+                <tr>
+                    <td>{{ Item.title }}</td>
+                    <td>{{ Item.wishes }}</td>
+                    <td>{{ Item.release_date }}</td>
+                    <td>{{ Item.release_date }}</td>
+                    <td>{{ Item.likes }}</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

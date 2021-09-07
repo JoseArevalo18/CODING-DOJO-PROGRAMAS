@@ -1,0 +1,112 @@
+//////////////////////////////////////////////////////////////
+////////////////////////////PARTE 1//////////////////////////
+///////////1/////////////////
+function multiply(x,y) {
+    console.log(x);
+    console.log(y);
+}
+b = multiply(2,3);
+console.log(b);
+SALIDA: 2,3, UNDEFINED
+///////////2/////////////////
+function multiply(x,y) {
+    return x*y;
+}
+b = multiply(2,3);
+console.log(b);
+console.log(multiply(5,2));
+SALIDA:6,10
+////////////3////////////////
+var x = [1,2,3,4,5,10];
+for(var i=0; i<5; i++) {
+   i = i + 3; 
+   console.log(i);
+}
+SALIDA:3,7
+///////////4////////////////
+var x=15;
+console.log(x);
+function awesome(){
+    var x=10;
+    console.log(x);
+}
+console.log(x);
+awesome();
+console.log(x);
+SALIDA: 15,15,10,15
+////////////5//////////////
+for(var i=0; i<15; i+=2) {
+   console.log(i);
+}
+SALIDA:0,2,4,6,8,10,12,14
+////////////6//////////////
+for(var i=0; i<3; i++) {
+    for(var j=0; j<2; j++) {      
+        console.log(i*j);
+    }
+ }
+SALIDA: 0,0,0,1,0,2 
+/////////////7//////////////
+function looping(x,y) {
+    for(var i=0; i<x; i++) {
+       for(var j=0; j<x; j++) {        
+           console.log(i*j);
+       } 
+    }
+ }
+ z = looping(3,3);
+ console.log(z);
+SALIDA: 0,0,0,0,1,2,0,2,4,undefined
+////////////////8//////////////
+function looping(x,y) {
+   for(var i=0; i<x; i++) {
+      for(var j=0; j<y; j++) {         
+         console.log(i*j);
+      } 
+   }
+   return x*y;
+}
+z = looping(3,5);
+console.log(z);
+SALIDA:0,0,0,0,0,0,1,2,3,4,0,2,4,6,8,15
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////PARTE 2//////////////////////////////////////////
+/////////////EJERCICIO 1/////////////////////////////
+function printUpTo(x) {
+    if(x<1){
+        return false;
+    }
+    for(var i=1;i<x;i++){
+        console.log(i);
+    }
+  }
+  printUpTo(1000); 
+  y = printUpTo(-10); 
+  console.log(y); 
+///////////EJERCICIO 2///////////////
+function printSum(x) {
+    var sum = 0;
+        for(var sum=0;sum<=x;sum++){
+        console.log(sum);
+        }
+        if(sum>=x){
+            console.log(((x*sum)/2))
+        }
+        
+    return sum;
+}
+y = printSum(255) 
+console.log(y) 
+//////////////////////EJERCICIO 3//////////////
+function printSumArray(x) {
+    var sum = 0;
+        for (sum = 0; sum < x.length; sum++) {
+        }
+    if(sum==3){
+        console.log(x[0]+x[1]+x[2]);
+        }
+        
+    return sum;
+    
+}
+console.log( printSumArray([1,2,3]) ); 

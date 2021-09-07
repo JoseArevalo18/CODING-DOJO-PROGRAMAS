@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        // return false no permite que se envien los formularios, no permite que la pagina se actualice
+        //.submit 1)escucha 2) usa el boton de submit
+        //serialize
+        $(document).ready(function(){
+            // alert('hello!');
+            $('#form1').submit(function(){
+                // return false;
+                // alert('me estas enviando');
+                console.log($(this).serialize());
+                return false;
+            });
+
+            $('.btn').click(function(){
+                $('#form1').submit();
+            })
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" action="process.php" method="post">
+        First name<input type="text" name="first_name">
+        Last name<input type="text" name="last_name">
+        Email<input type="text" name="email">
+        <input type="submit" value="submit!">
+    </form>
+
+    <button class="btn">Cliqueame para usar el .submit differently!</button>
+</body>
+</html>

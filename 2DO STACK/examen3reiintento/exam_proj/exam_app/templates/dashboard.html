@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Autor" content="JOSE AREVALO">
+    <meta name= "Tema" content="EXAMEN">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85c271c130.js" crossorigin="anonymous"></script>
+    <title>Wishes</title>
+</head>
+<body>
+    <a class="nav-link active" href="/user/logout"><i class="fas fa-sign-out-alt"></i>LOG OUT</a>
+    <h1>HELLO.. {{logged_user.name}} !!</h1>
+    <h3>your wish list:</h3>
+    <div class="d-flex justify-content-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ITEM</th>
+                    <th scope="col">DATE ADDED</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for shows in all_shows %}
+                <tr>
+                    <td>{{ shows.title }}</td>
+                    <td>{{ shows.release_date }}</td>
+                    <td><a href="/wishes/{{shows.id}}"><i class="fas fa-eye"></i></a>   <a href="/wishes/{{shows.id}}/edit"><i class="fas fa-edit"></i></a>   <a href="/wishes/{{ shows.id }}/delete"><i class="fas fa-trash-alt"></i></a>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+    <br><a href="/shows/networks">Show Networks</a>
+</body>
+</html>

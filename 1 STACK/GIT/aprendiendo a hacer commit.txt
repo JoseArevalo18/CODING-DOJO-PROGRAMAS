@@ -1,0 +1,17 @@
+-cd destkop
+-mkdir test
+-cd test
+-touch index.html
+ touch style.css
+-git inint
+-touch commit.txt
+- git log
+- git status
+-git add index.html
+-git status
+-git log
+-git status
+-git add index.html
+-git add style.css
+-git status
+-git log

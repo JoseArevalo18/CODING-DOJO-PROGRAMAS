@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES-JQUERY</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#imagen1').click(function(){
+                $('#imagen1').slideUp('#imagen1');
+            });
+
+            $('#imagen2').click(function(){
+                $('#imagen2').slideUp('#imagen2');
+            });
+
+            $('#imagen3').click(function(){
+                $('#imagen3').slideUp('#imagen3');
+            });
+
+            $('#imagen4').click(function(){
+                $('#imagen4').slideUp('#imagen4');
+            });
+
+            $('#imagen5').click(function(){
+                $('#imagen5').slideUp('#imagen5');
+            });
+
+            $('#imagen6').click(function(){
+                $('#imagen6').slideUp('#imagen6');
+            });
+
+            $('#imagen7').click(function(){
+                $('#imagen7').slideUp('#imagen7');
+            });
+
+            $('#imagen8').click(function(){
+                $('#imagen8').slideUp('#imagen8');
+            });
+
+            $('#boton1').click(function(){
+                $('#imagen1').slideDown();
+                $('#imagen2').slideDown();
+                $('#imagen3').slideDown();
+                $('#imagen4').slideDown();
+                $('#imagen5').slideDown();
+                $('#imagen6').slideDown();
+                $('#imagen7').slideDown();
+                $('#imagen8').slideDown();
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="master">
+            <div class="header">
+                <h1>My jQuery basic assignment!</h1>
+                <img src="izquierda.png" width="40px" height="40px">
+                <img src="derecha.jpg" width="40px" height="40px">
+                <img src="x.png" width="40px" height="40px">
+                <img src="casa.jpg" width="40px" height="40px">
+                <input type="text">
+                <input type="text" placeholder="     Lo que desee buscar........" name="Search">
+                <button type="submit"></button>
+            </div> <!-- header -->
+            <div class="add">
+                <h1>jQuery - assignment 1</h1>
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen1">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen2">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen3">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen4">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen5">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen6">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen7">
+                <img src="ninja.jpg" width="100px" height="100px" id="imagen8">
+                <button type="submit" id="boton1"><i>RESTAURAR</i></button>
+            </div> <!-- add -->
+
+        </div> <!-- master -->
+        <footer class="final">
+        </footer>
+    </div> <!-- container -->
+</body>
+</html>

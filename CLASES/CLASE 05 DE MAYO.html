@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <h1>BUCLES</h1>
+
+    <script type="text/javascript">
+        var showSms = true;
+        var num = 9;
+        var sms = 'Hola mundo';
+        if(showSms || sms.length>11 || num >3){
+            alert('Condicion Verdadera');
+            if(sms.length > 19){
+                alert('Entro al segundo if');
+            }else{
+                alert('No entro al segundo if');
+                if(sms==='Hola mundo'){
+                    alert('Entro al 3er if');
+                }
+            }
+        } else {
+            alert('Condicion Falsa');
+            console.log(sms.length);
+        }
+    </script>
+</body>
+</html>

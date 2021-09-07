@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCLES</title>
+    
+</head>
+
+<body>
+    <h1>BUCLES</h1>
+    <button onclick="test()">Click aqui</button>
+    <h3 id="demo"></h3>
+    <br>
+    <button onclick="test2()">Click aqui</button>
+    <h3 id="demos"></h3>
+
+    <script type="text/javascript">
+
+        function test(){
+            var str="Hola bienvenido a mi aplicativo";
+            var n= str.indexOf('mi');
+            document.getElementById('demo').innerHTML=n;
+        }
+
+        function test2(){
+            var str="Hola bienvenido a mi aplicativo";
+            var n= str.indexOf('mi');
+            if (n>15){
+                document.getElementById('demos').innerHTML=n;
+            }
+            
+        }
+        // var text='';
+        // var i=0;
+        // while(i<10){
+        //     text += "<br> Y mi numero en el laso es: " + i;
+        //     i++;
+        // }
+
+        // document.getElementById('demo').innerHTML=text;
+
+        //var text='';
+        // var diasHabiles = ['Lunes','Martes','Miercoles','Jueves','Viernes'];
+        // for(var counter=0; counter < 5; counter++){
+            
+        //     console.log(diasHabiles[counter]);
+        //     text+=diasHabiles[counter] + "<br>";
+        //     document.getElementById('demo').innerHTML=text;
+        // } 
+
+        // for(dias in diasHabiles){
+        //     console.log(diasHabiles[dias]);
+        // }
+
+    </script>
+</body>
+</html>

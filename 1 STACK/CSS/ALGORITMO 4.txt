@@ -1,0 +1,55 @@
+//////////////1////////////////
+function greaterY(arr, Y) {
+    var count=0;
+    for(var i=0;i<arr.length;i++){
+    if(arr[i]>Y){
+        console.log(arr[i]);
+    }    
+    } 
+    return count; 
+}
+z=greaterY([1,3,5,7,8,3,9,0,2], 4);
+console.log(z);
+///////////////2////////////////
+function maxMinAvg(arr) {
+    var max= arr[0];
+    var min= arr[0];
+    var sum= arr[0];
+    for(var i=1;i<arr.length;i++){
+    if(arr[i]>max){
+        max=arr[i];
+    }
+    if(arr[i]<min){
+        min=arr[i];
+    }
+    sum= sum+arr[i];
+    }
+    var avg = sum/arr.length;
+    var arrnew=[max,min,avg];
+    return arrnew; 
+}
+console.log(maxMinAvg([9,5,0,-3,4]));
+///////////////////3//////////////////////
+function numToStr(arr) {
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]<0){
+        arr[i]='Dojo';
+        }
+    }
+return arr; 
+}
+console.log(numToStr([1,2,-3,-5,5]));
+/////////////////////4///////////////////////
+
+function removeVals(x, y,z){
+    var offset = z-y+1;// offset=3
+    for (var i = y; i <= offset; i++){// var i=2;i<=3;i++
+        x[i] = x[i+offset];//40=x[2+3]=(40=x[5])={40=(70)}  
+    }
+    console.log(x);// 20,30,70,undefined,60,70
+    x.length = x.length - offset; // 20,30,70
+    //5=5-3
+    return x;//20,30,70
+}
+var result = removeVals([20,30,40,50,60,70],2,4);
+console.log(result); 

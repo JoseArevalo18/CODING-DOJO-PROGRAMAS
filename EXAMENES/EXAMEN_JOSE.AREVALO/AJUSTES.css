@@ -1,0 +1,237 @@
+/* * { 
+    outline: 2px solid rgb(12, 12, 12);
+}  */
+
+.contenido{
+    display:inline-block;
+    margin: 0px;
+    width: 1898px;
+    height: 200px;
+    background-color: lightgrey;
+}
+.encabezado>img{
+    margin: 5px;
+}
+.falso{
+    display: inline-block;
+    margin: 20px;
+    width: 800px;
+    height: 100px;
+    vertical-align: 5px;
+}
+.encabezado2{
+    display: inline-block;
+    margin: 0px 2px;
+    width: 360px;
+    height: 100px;
+    vertical-align: 90px;
+}
+.miniencabezado>p{
+    display: inline-block;
+    width: 70px;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: bisque;
+}
+.miniencabezado>input{
+    display: inline-block;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+.miniencabezado>img{
+    display: inline-block;
+    margin: 0px;
+}
+.temas{
+    width:1779px;
+    text-align: end;
+}
+.temas>h3{
+    display: inline-block;
+    width: 150px;
+    margin: 0px 1px;
+    border-right: 6px solid rgb(41, 38, 38);
+    background-color: lightgrey;
+    text-align: center;
+    color: grey;
+}
+
+.miniformulario{
+    height: 780px;
+    background-color: rgb(21, 65, 109);;
+}
+.bloquemaster{
+    display: inline-block;
+    vertical-align: 40px;
+}
+.bloque1{
+    margin: 10px 30px;
+    width: 400px;
+    height: 343px;
+    background-color: grey;
+    border: 2px solid white;
+}
+.titulo{
+    background-color: dodgerblue;
+    text-align: center;
+    margin: 0px;
+    color: floralwhite;
+}
+.titulo>h1{
+    margin: 0px;
+}
+.titulo>p{
+    font-size: 20px;
+    margin: 1px;
+}
+.formulario{
+    background-color: grey;
+    margin: 0px;
+}
+.formulario>h1{
+    margin: 0px;
+}
+.formulario>input{
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 120px;
+}
+.formulario>p{
+    margin: 0px;
+    color: mediumturquoise;
+    font-size: 20px;
+}
+.formulario>button{
+    background-color: #974f38;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.formulario>h4{
+    display: inline-block;
+    margin: 20px 10px;
+    font-size: 20px;
+    color: mediumturquoise;
+}
+.bloque2{
+    margin: 10px 30px;
+    color:white;
+    width: 400px;
+    background-color: dodgerblue;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+.miniformulario>img{
+    display: inline-block;
+    margin: 0px 150px 0px 20px;
+    vertical-align: 0px;
+}
+.informacion{
+    margin: 4px;
+    background-color: grey;
+    height: 50px;
+    
+}
+.informacion>h1{
+    display: inline-block;
+    vertical-align: 2px;
+    margin: 0px 20px;
+}
+.informacion>p{
+    display: inline-block;
+    color: rgb(33, 83, 134);
+    font-size: 30px;
+    margin: 0px 2px;
+}
+.bloquespeques{
+    text-align: center;
+    background-color: rgb(21, 65, 109);;
+}
+.minibloque1{
+    width: 450px;
+    height: 120px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: 13px;
+}
+.minibloque1>img{
+    margin: 10px;
+    display: inline-block;
+}
+.miniminibloque{
+    display: inline-block;
+    width: 268px;
+    height: 100px;
+    vertical-align: 13px;
+}
+.miniminibloque>p{
+    color: rgb(33, 83, 134);
+    font-size: 18px;
+}
+.minibloque2{
+    width: 450px;
+    height: 120px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: 10px;
+}
+.minibloque2>img{
+    margin: 10px;
+    display: inline-block;
+}
+.minibloque3{
+    width: 450px;
+    height: 120px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+}
+.minibloque3>img{
+    margin: 10px;
+    display: inline-block;
+}
+.partefinal{
+    background-color: lightgrey;
+}
+.partefinal>h2{
+    display: inline-block;
+    margin: 0px 0px 0px 40px;
+    border-right: 6px solid rgb(29, 27, 27);
+    background-color: lightgrey;
+    text-align: center;
+    color: grey;
+}
+.partefinal>h3{
+    display: inline-block;
+    margin-left: 500px;
+    border-left: 6px solid rgb(29, 27, 27);
+    background-color: lightgrey;
+    text-align: end;
+    color: grey;
+}
+.partefinal>h3>b{
+    display: inline-block;
+    color: black;
+    margin: 0px 10px;
+}
+.partefinal>h3>p{
+    color: green;
+    display: inline-block;
+    margin: 0px 10px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // $('button').click(function(){
+            //     //getter function mantiene el valor igual al parrafo
+            //     var myText = $('#myParagraph').text();
+            //     alert(myText);
+            // });
+            //setter function  cambia el valor del parrafo
+            $('button').click(function(){
+                $('#myParagraph').text('que mas ve guambra caca');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id='myParagraph'> ¡Este es mi párrafo! </p>
+    <button>CLICK ME TO CHANGE THE PARAGRAPH!</button>
+</body>
+</html>

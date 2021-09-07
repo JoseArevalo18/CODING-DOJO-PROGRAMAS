@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function validate() {
+    
+    var x = document.forms["validForm"]["nombre"].value;
+    var y = document.forms["validForm"]["apellido"].value;
+    var z = document.forms["validForm"]["email"].value;
+
+    if (x == "") {
+        alert('PLEASE ENTER YOUR NAME');            
+    }
+    if (y == "") {
+        alert('PLEASE ENTER YOUR MAIL');            
+    }
+    if (z == "") {
+        alert('PLEASE ENTER YOUR ID');            
+    }
+}
+
+    </script>
+</head>
+
+    <h1>Mi Formulario de Registro</h1>
+    <body>
+        <form action="validform">
+            <p></p>
+            <label>
+                Nombre:<input type="text" name="nombre">
+            </label>
+            <p></p>
+            <label>
+                Apellido:<input type="text" name="apellido">
+            </label>
+            <p></p>
+            <label>
+                Email:<input type="text" name="email">
+            </label>
+            <p></p>
+            <label >
+                Contraseña:<input type="password" name="contraseña">
+            </label>
+            <p></p>
+            <label>
+                Confirmar:<select name="confirmar">
+                    <option value=""></option>
+                    <option value="yes">si</option>
+                    <option value="no">no</option>
+                </select>
+            </label>
+            <p></p>
+            <label>
+                Cumpleaños:<input type="date" name="cumpleaños">
+            </label>
+            <p>Seleccione su género:</p>
+            <label>
+                Masculino<input type="radio" name="genero" value="masculino"> 
+            </label>
+            <label>
+                Femenino<input type="radio" name="genero" value="femenino">
+            </label>
+            <label>
+                Otro<input type="radio" name="genero" value="otro">
+            </label>
+            <p>Una Breve descripcion de ti</p>
+            <label>
+                <textarea name="description"></textarea>
+            </label>
+            <p></p>
+            Lenguaje Favorito<select name="lenguaje">
+                <option value=""></option>
+                <option value="javascript">JavaScript</option>
+                <option value="css">CSS</option>
+                <option value="phyton">Phyton</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Enviar">
+            <button class="btn" onclick="validate()">Aceptar</button>
+        </form>
+    </body>
+</html>

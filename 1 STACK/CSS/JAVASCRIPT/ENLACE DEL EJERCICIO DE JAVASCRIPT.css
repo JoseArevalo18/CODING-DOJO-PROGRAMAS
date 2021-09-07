@@ -1,0 +1,50 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+h1, h2, li, p{
+    color: rgb(184, 201, 206);
+}
+b{
+    color: purple;
+}
+a{
+    color: cyan;
+}
+#wrapper{
+    width: 1800px;
+    background-color: rgb(38, 38, 143);
+    margin: 0px auto;
+
+}
+#header{
+    min-height: 60px;
+    background-color: rgb(117, 67, 67);
+    
+}
+#navigation{
+    min-height: 300px;
+    width: 400px;
+    background-color: rgb(38, 156, 177);
+    display: inline-block;
+    vertical-align: 215px;
+}
+#main_content{
+    min-height: 600px;
+    width: 1345px;
+    background-color: rgba(36, 32, 32, 0.658);
+    display: inline-table;
+    vertical-align: 580px;
+}
+.subcontents{
+    min-height: 400px;
+    width: 425px;
+    background-color: rgb(104, 104, 46);
+    display: inline-block;
+}
+#advertisement{
+    min-height: 50px;
+    width: 1768px;
+    background-color: rgb(56, 63, 62);
+    
+}

@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline:1px solid pink; */
+}
+.container{
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+    margin: 0px auto;
+}
+.box0 {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+
+}
+.box1 {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+}
+.box2 {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+}
+.box3 {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+}
+.box4 {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+}
+.ninja{
+    width: 200px;
+
+}
+.cat{
+    width: 200px;
+}

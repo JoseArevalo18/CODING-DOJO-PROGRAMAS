@@ -1,0 +1,88 @@
+* { 
+    outline: 1px dotted red;
+}
+.container{
+    width: 1900px;
+    min-height: 1200px;
+    background-color: purple;
+}
+.header{
+    width: 1900px;
+    min-height: 100px;
+}
+.titulo{
+    width: 947px;
+    min-height: 100px;
+    display: inline-block;
+    background: burlywood;
+}
+.titulo2{
+    width: 947px;
+    min-height: 100px;
+    display: inline-block;
+    background: burlywood;
+    vertical-align: 10px;
+}
+.desarrollo{
+    margin: 20px;
+    padding: 10px;
+    width: 500px;
+    min-height: 290px;
+    display: inline-block;
+    background-color: grey;
+}
+.desarrollo2{
+    vertical-align: 52px;
+    width: 500px;
+    min-height: 310px;
+    display: inline-block;
+    background: rgb(117, 130, 136);
+}
+.subtitulo{
+    min-height: 0px;
+    background-color: rgb(118, 139, 139);
+    
+}
+.parrafo{
+    min-height: 250px;
+    background-color: honeydew;
+}
+.texto{
+    margin: 20px;
+    min-width: 300px;
+    
+}
+.informacion{
+    margin: 20px;
+    text-align: center;
+    background-color: purple;
+}
+.bloque{
+    vertical-align: 90px;
+    margin: 20px;
+    width: 500px;
+    min-height: 695px;
+    background: honeydew;
+    display: inline-block;
+}
+.texto2{
+    margin: 10px;
+    min-height: 30px;
+    text-align: center;
+}
+.bloque2{
+    margin: 20px;
+    vertical-align: 70px;
+    width: 500px;
+    min-height: 695px;
+    background: honeydew;
+    display: inline-block;
+}
+.bloque3{
+    vertical-align: 52px;
+    margin: 20px;
+    width: 500px;
+    min-height: 550px;
+    background: honeydew;
+    display: inline-block;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ninga to Cat">
+    <meta name="keywords" content="Hacer una pagina html, usar CSS correctamente, como usar JavaScript en mi pagina, jQuery">
+    <meta name="author" content="Coding Dojo Ecuador V1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $("img").hover(function() {
+
+        var temporal = $(this).attr("src");
+
+        $(this).attr("src", $(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src", temporal);
+
+
+
+    });
+});
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ninja To cat</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box0">
+            <img class="cat" src="img/ninja1.jpg" data-alt-src="img/ninja2.jpg" id="box0">
+        </div>
+        <div class="box1">
+            <img class="cat" src="img/ninja1.jpg" data-alt-src="img/ninja2.jpg" id="box1">
+        </div>
+        <div class="box2">
+            <img class="cat" src="img/ninja1.jpg" data-alt-src="img/ninja2.jpg" id="box2">
+        </div>
+        <div class="box3">
+            <img class="cat" src="img/ninja1.jpg" data-alt-src="img/ninja2.jpg" id="box3">
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* * { 
+    outline: 1px dotted red;
+} */
+.container{
+    width: 920px;
+    min-height: 830px;
+    background-color: tan;
+}
+.titulo{
+    margin: 20px;
+    width: 800px;
+    min-height: 100px;
+    text-align: center;
+}
+.subtitulo{
+    margin: 20px;
+    display: inline-block;
+}
+
+.fotografias {
+    width: 920px;
+    min-height: 150px;
+    text-align: center;
+}
+.foto1{
+    margin: 4px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    border: 3px solid black;
+}
+.foto2{
+    margin: 4px;
+    padding: 10px;
+    background-color: pink;
+    display: inline-block;
+    border: 3px solid black;
+}

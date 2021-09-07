@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Autor" content="JOSE AREVALO">
+    <meta name= "Tema" content="EXAMEN">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>One group</title>
+</head>
+<body>
+    <li class="nav-item">
+        <a class="nav-link active" href="/user/logout"><i class="fas fa-sign-out-alt"></i>LOG OUT</a>
+        <a class="nav-link active" href="/user/dashboard"><i class="fas fa-sign-out-alt"></i>HOME</a>
+    </li>
+    <div class="container-sm">
+        <h1>{{group.title}}</h1>
+        <ul>
+            {% for member in group.members.all %}
+            <li>{{member.name}} </li>
+            {% endfor %}
+        </ul>
+        <br>
+        <hr>
+        <div class="list-group-item list-group-item-secondary">
+            <h2>Review:</h2>
+            {% for review in group.group_reviews.all %}
+                <hr>
+                <p>Review Author: <a href="/user/{{review.user_review.id}}">{{review.user_review.name}}</a></p>
+                <br>
+                <p>Description of group: {{review.content}}</p>
+                <br>
+                <p>Members of group: {{member.name}}</p>
+                <br>
+                <p>Posted at: {{review.created_at}}</p>
+                {% if review.user_review.id == request.session.logged_user %}
+                <a class="nav-link active" aria-current="page" href="/review/{{review.id}}/delete">Leave Group</a>
+                {% endif %}
+            {% endfor %}
+            <a class="nav-link active" aria-current="page" href="/user/dashboard">Go back</a>
+        </div>
+    </div>
